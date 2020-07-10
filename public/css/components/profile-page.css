@@ -13,6 +13,7 @@
   border: 8px solid var(--primary-color);
   margin-top: -50%;
   width: 100%;
+  margin-left: 14%;
 }
 .profile-page__friends {
   max-width: var(--max-content-width);
@@ -23,6 +24,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-left: 14%;
 }
 .friend {
   margin-bottom: 16px;

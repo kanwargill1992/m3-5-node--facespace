@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+<div class="profile-page ">
+    <div class="profile-page--banner"></div>
+        <div class="profile-page_user">
+        
+        <img src=<%- user.avatarUrl %> class="profile-page__user--avatar"/>
+        <h4 class="profile-page__user "><%= user.name %> </h4></div>
+        <div class="profile-page__friends">
+          <h3 class="profile-page__user"><%= user.name %>'s Friends</h3></div>
+        <ul class="profile-page__friends--list ">
+            <% friends.map((friend) => {  %>  
+               <li class="homepage__all--user">
+                <a href="/users/"><img src="<%- friend.avatarUrl %>" /></a>
+                
+                
+                <h4><%= friend.name %> </h4>
+                  
+              </li>
+              
+            <% }) %>
+        </ul>
+      <!-- </div> -->
+      </div>
+</div>
+<%- include('../partials/footer') %>

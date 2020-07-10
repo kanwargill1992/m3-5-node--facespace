@@ -1,1 +1,12 @@
-<!-- ... -->
+<%- include("../partials/header",{users}) %>
+<div class="home-page">
+    <h2>All Facespace Members</h2>
+    <ul class="homepage__all">
+        <% users.forEach((user) => { %>
+        <li class="homepage__all--user">
+          <img src="<%- user.avatarUrl %>" />
+        </li>
+        <% }) %>
+      </ul>
+</div>
+<%- include("../partials/footer") %> 
